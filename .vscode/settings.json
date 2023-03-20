@@ -1,0 +1,15 @@
+{
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=100",
+        "--skip-string-normalization"
+    ],
+    "python.linting.pydocstyleEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--init-hook",
+        "import sys; sys.path.insert(0, './src/')",
+        "--disable=missing-class-docstring,missing-function-docstring,missing-module-docstring",
+        "--generated-members=torch.*"
+    ],
+}

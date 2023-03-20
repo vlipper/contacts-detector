@@ -1,0 +1,3 @@
+model_path: './static/attention-mining-model.jit.pt'
+tokenizer_path: './static/tokenizer'
+attention_threshold: 0.037
